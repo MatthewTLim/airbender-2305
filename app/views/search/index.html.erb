@@ -1,5 +1,5 @@
-<p>Total Members: <%= @nations_index.count %></p>
-<% @nations_index.each do |character| %>
+<p>Total Members: <%= @characters_by_nation.count %></p>
+<% @characters_by_nation.each do |character| %>
   <img src="<%= character.photo_url %>" alt="<%= character.name %> Image">
   <p>Name: <li><%= character.name %></li></p>
   <p>Affiliation: <li><%= character.affiliation %></li></p>

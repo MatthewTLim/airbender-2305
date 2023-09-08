@@ -7,11 +7,11 @@ RSpec.describe "Welcome" do
       visit "/"
 
       select "Fire Nation", from: "nation"
-      
+
       click_button "Search For Members"
 
       expect(current_path).to eq("/search")
-      expect(page).to have_content("Total Members: 12")
+      expect(page).to have_content("Total Members: 97")
     end
 
     it "displays member info within the nation" do
