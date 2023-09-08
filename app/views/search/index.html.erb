@@ -1,0 +1,15 @@
+<p>Total Members: <%= @nations_index.count %></p>
+<% @nations_index.each do |character| %>
+  <img src="<%= character.photo_url %>" alt="<%= character.name %> Image">
+  <p>Name: <li><%= character.name %></li></p>
+  <p>Affiliation: <li><%= character.affiliation %></li></p>
+    <p>Allies:</p>
+    <% character.allies.each do |ally| %>
+      <li><%= ally %></li>
+    <% end %>
+      <p>Enemies:</p>
+      <% character.enemies.each do |enemy| %>
+        <li><%= enemy %></li>
+      <% end %>
+  <br>
+<% end %>
